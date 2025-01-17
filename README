@@ -1,0 +1,15 @@
+To use:
+
+Set:
+
+PATH_TO_LOG
+ORG_KEY
+API_KEY
+
+Within oai.py
+
+Then you can make a logged LLM call like:
+
+resp = base_query('gpt4o', YOUR_PROMPT)
+
+Then you can check the experimental cost with cost.py
