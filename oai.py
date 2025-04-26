@@ -11,9 +11,12 @@ MM = {
     'gpt3.5': 'gpt-3.5-turbo',
     'gpt4': 'gpt-4',
     'gpt4o': 'gpt-4o',
+    'gpt4p1': 'gpt-4.1',
     'gpt4omini': 'gpt-4o-mini',
     'o1mini': 'o1-mini',
+    'o4mini': 'o4-mini',
     'o1': 'o1',
+    'o3': 'o3',
     'may_gpt4o': 'gpt-4o-2024-05-13'
 }
 
