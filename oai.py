@@ -146,4 +146,8 @@ def conv_query(
     return output
 
 
-    
+import base64
+# Function to encode the image
+def oai_enc_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")

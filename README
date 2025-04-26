@@ -12,4 +12,26 @@ Then you can make a logged LLM call like:
 
 resp = base_query('gpt4o', YOUR_PROMPT)
 
+If you have an image to include in the prompt, at '/path/to/img'
+
+you can do:
+
+image_data = oai_enc_image('/path/to/img')
+
+resp = base_query('gpt4o', YOUR_PROMPT, image_data=image_data)
+
 Then you can check the experimental cost with cost.py
+
+For instance, if you have many LLM calls that are a part of a single experiment, you can automatically create an openAI log for the expriment by passing in  '/path/to/log/file' to base_query as the 'log_file' argument.
+
+Then you can run cost.py like:
+
+python3 cost.py exp /path/to/log/file
+
+Otherwise you can use cost.py to check the cost for a day or month like
+
+# Check march:
+python3 cost.py day 2025_03
+
+# Check march 14
+python3 cost.py day 2025_03_14
